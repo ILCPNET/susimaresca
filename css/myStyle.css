@@ -4,17 +4,23 @@
     box-sizing: border-box;
 }
 
-/* .body {
+.body {
+    display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
-} */
-
-.img {
+    
+}
+.carousel-inner img {
     width: 100vh;
+    
+    object-fit: cover;
 }
 
+
 .navbar {
-    background-color: rgba(17, 17, 17, 0.24);
+    /* background-color: rgba(17, 17, 17, 0.24); */
+    background-color: transparent !important;
 }
 
 .navbar .nombre {
@@ -40,13 +46,7 @@
     color: white;
 }
 
-.footer {
-    height: 10px;
-}
 
-.container {
-    color: transparent;
-}
 
 .text-small-caps {
     font-variant: small-caps;
