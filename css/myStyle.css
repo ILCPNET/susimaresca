@@ -9,6 +9,7 @@
     flex-direction: column;
     margin: 0;
     padding: 0;
+    color: white;
     
 }
 .carousel-inner img {
@@ -46,3 +47,19 @@
 .text-small-caps {
     font-variant: small-caps;
 }
+/* Grid de prueba - Proyectos*/
+.container{
+    margin-top: 12vh;
+    margin-bottom: 8vh;
+    /* border: 1px solid red; */
+    display: grid;
+    margin-left: 10vh;
+    margin-right: 10vh;
+}
+.cont {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    gap: 10px;
+  }
+ 
