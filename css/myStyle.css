@@ -62,4 +62,21 @@
     grid-template-rows: auto;
     gap: 10px;
   }
- 
+ .tit{
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 2em;
+    font-style: normal;
+}
+span{
+     
+     font-family: "Cinzel", serif;
+
+ }
+ .span2{
+    font-family: "Pacifico";
+ }
+ .tarjimg{
+    box-shadow: 3px solid black;
+ }
