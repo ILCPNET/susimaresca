@@ -29,11 +29,12 @@
     </style>
 </head>
 
-<body class="body bg-dark">
+<body class="body bg-black">
+    <img class="fondimg fixed-top" src="images/lrdlvocesdelagua/Portada/0fondo.png">
     <!-- Home Section -->
     <section id="proyects" class="">
         <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-black">
             <div class="container-fluid">
                 <a class="navbar-brand text-light text-small-caps nombre" href="#">Susi Maresca</a>
                 <div class="collapse navbar-collapse" id="navbarNav">
@@ -60,34 +61,42 @@
     </section>
     <section id="">
         <div class="container">
-            <h1 class="text-center tit"><span>LA RUTA DEL LITIO<br></span><span class="span2"> VOCES DEL AGUA</span></h1>
+            <h1 class="text-center tit"><span>LA RUTA DEL LITIO<br></span><span class="span2"> VOCES DEL AGUA</span>
+            </h1>
             <div class="gallery">
                 <div class="tarjeta">
-                    <img class="tarjimg" src="images/lrdlvocesdelagua/Ancasti/1.jpg" alt="">
+                    <img class="targimg img-fluid fade-in" src="images/lrdlvocesdelagua/Ancasti/1.jpg" alt="">
                 </div>
                 <div class="tarjeta">
-                    <img src="images/lrdlvocesdelagua/Belen/10 (2).jpg" alt="">
+                    <img class="targimg img-fluid fade-in" src="images/lrdlvocesdelagua/Belen/10 (2).jpg" alt="">
                 </div>
                 <div class="tarjeta">
-                    <img src="images/lrdlvocesdelagua/Capitulo1/1-portada título.jpg" alt="">
+                    <img class="targimg img-fluid fade-in" src="images/lrdlvocesdelagua/Capitulo1/1-portada título.jpg"
+                        alt="">
                 </div>
                 <div class="tarjeta">
-                    <img src="images/lrdlvocesdelagua/Capitulo2/1-portada titulo.jpg" alt="">
+                    <img class="targimg img-fluid fade-in" src="images/lrdlvocesdelagua/Capitulo2/1-portada titulo.jpg"
+                        alt="">
                 </div>
                 <div class="tarjeta">
-                    <img src="images/lrdlvocesdelagua/Capitulo3/1-portada título.jpg" alt="">
+                    <img class="targimg img-fluid fade-in" src="images/lrdlvocesdelagua/Capitulo3/1-portada título.jpg"
+                        alt="">
                 </div>
                 <div class="tarjeta">
-                    <img src="images/lrdlvocesdelagua/Capitulo4/1-Portada capítulo.jpg" alt="">
+                    <img class="targimg img-fluid fade-in"
+                        src="images/lrdlvocesdelagua/Capitulo4/1-Portada capítulo.jpg" alt="">
                 </div>
                 <div class="tarjeta">
-                    <img src="images/lrdlvocesdelagua/Capitulo6/1-Título portada.jpg" alt="">
+                    <img class="targimg img-fluid fade-in" src="images/lrdlvocesdelagua/Capitulo6/1-Título portada.jpg"
+                        alt="">
                 </div>
                 <div class="tarjeta">
-                   <img src="images/lrdlvocesdelagua/Capitulo5/LosPueblosDeLaSal/01.jpg" alt="">
+                    <img class="targimg img-fluid fade-in"
+                        src="images/lrdlvocesdelagua/Capitulo5/LosPueblosDeLaSal/01.jpg" alt="">
                 </div>
                 <div class="tarjeta">
-                    <img src="images/lrdlvocesdelagua/Portada/7-Camino a Anquincila.jpg" alt="">
+                    <img class="targimg img-fluid fade-in"
+                        src="images/lrdlvocesdelagua/Portada/7-Camino a Anquincila.jpg" alt="">
                 </div>
 
             </div>
@@ -102,6 +111,16 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const imgs = document.querySelectorAll('.fade-in');
+            setTimeout(() => {
+                imgs.forEach(img => {
+                    img.classList.add('show');
+                });
+            }, 10);
+        });
+    </script>
 </body>
 
 </html>

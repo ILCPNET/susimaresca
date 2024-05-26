@@ -76,7 +76,20 @@ span{
  }
  .span2{
     font-family: "Pacifico";
+    margin-left: 3em;
  }
- .tarjimg{
-    box-shadow: 3px solid black;
+ .targimg{
+    box-shadow: 3px solid white;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+ }
+ .fondimg{
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    height: auto;
+ }
+
+ .show{
+    opacity: 1;
  }
