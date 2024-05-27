@@ -48,18 +48,19 @@
     font-variant: small-caps;
 }
 /* Grid de prueba - Proyectos*/
-.container{
+/* .container{
     margin-top: 12vh;
     margin-bottom: 8vh;
-    /* border: 1px solid red; */
+    border: 1px solid red;
     display: grid;
     margin-left: 10vh;
     margin-right: 10vh;
-}
+} */
 .cont {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: par par1 par2 par3;
     gap: 10px;
   }
  .tit{
@@ -79,6 +80,7 @@ span{
     margin-left: 3em;
  }
  .targimg{
+    gap: 2;
     box-shadow: 3px solid white;
     opacity: 0;
     transition: opacity 2s ease-in-out;
