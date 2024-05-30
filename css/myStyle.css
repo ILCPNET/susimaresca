@@ -130,3 +130,11 @@
     height: 95vh;
     margin-left: 40vh;
 }
+.pres{
+    text-align: left;
+}
+.bio{
+    width: 100vh;
+    height: 100%;
+    object-fit: cover;
+}
