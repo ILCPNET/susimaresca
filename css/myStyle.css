@@ -4,16 +4,19 @@
     box-sizing: border-box;
 }
 
-.body {
-    display: flex;
-    flex-direction: column;
+.body{
     margin: 0;
-    padding: 0;
+    height: 100%;
     color: white;
-    
+
 }
-.carousel-inner img {
-    width: 100vh;
+/* .carruselItem{
+    justify-items: center;
+
+} */
+.img {
+    width: 100%;
+    height: 100vh;
     object-fit: cover;
 }
 
@@ -23,7 +26,7 @@
 }
 
 .navbar .nombre {
-    margin-left: 200px;
+    margin-left: 10vw;
     font-family: "Montserrat", serif;
     font-optical-sizing: auto;
     font-weight: 300;
@@ -47,51 +50,69 @@
 .text-small-caps {
     font-variant: small-caps;
 }
-/* Grid de prueba - Proyectos*/
-/* .container{
-    margin-top: 12vh;
-    margin-bottom: 8vh;
-    border: 1px solid red;
-    display: grid;
-    margin-left: 10vh;
-    margin-right: 10vh;
-} */
-.cont {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: par par1 par2 par3;
-    gap: 10px;
-  }
- .tit{
+
+.tit {
+    margin-left: 10vw;
     font-family: "Montserrat", serif;
     font-optical-sizing: auto;
-    font-weight: 500;
-    font-size: 2em;
+    font-weight: 800;
+    font-size: 2.1em;
     font-style: normal;
+    align-items: center;
 }
-span{
-     
-     font-family: "Cinzel", serif;
-
- }
- .span2{
-    font-family: "Pacifico";
-    margin-left: 3em;
- }
- .targimg{
+.tarjeta {
+    position: relative;
+    overflow: hidden;
     gap: 2;
-    box-shadow: 3px solid white;
+}
+
+.targimg {
+    gap: 2;
+    width: 100%;
+    /* height: 100%; */
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    /* box-shadow: 3px solid white; */
+    opacity: 1;
+    /* transition: opacity 2s ease-out; */
+}
+
+.overlayImg {
+    position: absolute;
+    top: 0;
+    /* left: 0; */
+    /* width: 100%; */
+    height: 100%;
+    object-fit: cover;
     opacity: 0;
-    transition: opacity 2s ease-in-out;
- }
- .fondimg{
-    display: flex;
+    transition: opacity 1s ease-in-out;
+
+}
+.tarjeta:hover .overlayImg {
+    opacity: 1;
+}
+
+.fondimg {
     position: absolute;
     z-index: -1;
     height: auto;
- }
+}
 
- .show{
+.show {
     opacity: 1;
- }
+}
+.mosaico{
+    margin-top: 10%;
+}
+.img1{
+    margin-top: 6%;
+    height: 100%;
+    width: 100%;
+    
+}
+.carr{
+    width: auto;
+    height: 95vh;
+    margin-left: 40vh;
+}
