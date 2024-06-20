@@ -11,28 +11,84 @@
         href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <Link rel="stylesheet" href="css/myStyle.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .parallax-container {
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .parallax-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: opacity 2s ease;
+            opacity: 1;
+        }
+
+        .parallax-container img.hidden {
+            
+            opacity: 0;
+        }
+
+        
+        /* .navbar-nav .dropdown-menu .dropdown-menu {
+            display: none;
+            top: 0;
+            left: 100%;
+        }
+
+        .navbar-nav .dropdown-menu .nav-item:hover > .dropdown-menu {
+            display: block;
+        } */
+    </style>
 </head>
 
 <body class="body bg-dark">
     <!-- Home Section -->
     <section id="home" class="">
         <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <nav class="navbar navbar-expand-lg navbar2 fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand text-light text-small-caps nombre" href="index.html">Susi Maresca</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto text-small-caps">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Inicio</a>
+                            <a class="nav-link" href="index.html"><b>Inicio</b></a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item dropdown">
                             <a class="nav-link" href="proyectos.html">Proyectos</a>
+                            <ul class="dropdown-menu">
+                                <li >
+                                    <a href="libro.html" class="dropdown-item">La ruta del litio, voces del agua</a>
+                                </li>
+                            </ul>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item dropdown">
                             <a class="nav-link" href="historias.html">Historias</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="aCielo.html" class="dropdown-item">A cielo abierto</a>
+                                </li>
+                                <li>
+                                    <a href="recuper.html" class="dropdown-item">Tierra</a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="bio.html">Bio</a>
@@ -44,37 +100,37 @@
                 </div>
             </div>
         </nav>
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3500">
-            <div class=" carousel-inner">
-                <div class="carruselItem carousel-item active">
-                    <img src="images/home/Catamarca- Luchar por el agua.jpg" class="img d-block w-100" alt="...">
-                </div>
-                <div class="carruselItem carousel-item">
-                    <img src="images/home/malon.jpg" class="img d-block w-100" alt="...">
-                </div>
-                <div class="carruselItem carousel-item">
-                    <img src="images/home/Mar sin petroleras.jpg" class="img d-block w-100" alt="...">
-                </div>
-                <div class="carruselItem carousel-item">
-                    <img src="images/home/Recuperacion de tierras.JPG" class="img d-block w-100" alt="...">
-                </div>
-                <div class="carruselItem carousel-item">
-                    <img src="images/home/Susi Maresca 3.jpg" class="img d-block w-100" alt="...">
-                </div>
-                <div class="carruselItem carousel-item">
-                    <img src="images/home/Susi Maresca 12.jpg" class="img d-block w-100" alt="...">
-                </div>
-            </div>
+        <div class="parallax-container">
+            <img src="images/home/Catamarca- Luchar por el agua.jpg" class="parallax-image active" alt="...">
+            <img src="images/home/malon.jpg" class="parallax-image hidden" alt="...">
+            <img src="images/home/Mar sin petroleras.jpg" class="parallax-image hidden" alt="...">
+            <img src="images/home/Recuperacion de tierras.JPG" class="parallax-image hidden" alt="...">
+            <img src="images/home/Susi Maresca 3.jpg" class="parallax-image hidden" alt="...">
+            <img src="images/home/Susi Maresca 12.jpg" class="parallax-image hidden" alt="...">
+        </div>
+        </div>
         </div>
     </section>
     <!-- Footer -->
     <footer class="footer text-white text-center fixed-bottom">
         <p>&copy; 2024 - Susi Maresca - Todos los derechos reservados.</p>
     </footer>
-
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const images = document.querySelectorAll('.parallax-image');
+            let currentImageIndex = 0;
+
+            setInterval(() => {
+                images[currentImageIndex].classList.remove('active');
+                images[currentImageIndex].classList.add('hidden');
+
+                currentImageIndex = (currentImageIndex + 1) % images.length;
+                images[currentImageIndex].classList.remove('hidden');
+                images[currentImageIndex].classList.add('active')
+            }, 5000);
+        });
+    </script>
 </body>
 
 </html>

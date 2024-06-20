@@ -26,13 +26,7 @@
             margin: 5px;
         }
 
-        .texto {
-            padding: 2em;
-            margin-top: 7vw;
-            border: 3px solid white;
-            font-family: "Montserrat", serif;
-            font-size: 1.2em;
-        }
+    
     </style>
 </head>
 
@@ -45,17 +39,32 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <h1 class="subTit text-small-caps d-none d-lg-block">Tierra</h1>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto text-small-caps">
                     <li class="nav-item">
+                        <p class="nav-link"><b>Tierra</b>&emsp;|</p>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="index.html">Inicio</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item dropdown">
                         <a class="nav-link" href="proyectos.html">Proyectos</a>
+                        <ul class="dropdown-menu">
+                            <li >
+                                <a href="libro.html" class="dropdown-item">La ruta del litio, voces del agua</a>
+                            </li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item dropdown">
                         <a class="nav-link" href="historias.html">Historias</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="aCielo.html" class="dropdown-item">A cielo abierto</a>
+                            </li>
+                            <li>
+                                <a href="recuper.html" class="dropdown-item">Tierra</a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="bio.html">Bio</a>
@@ -69,7 +78,7 @@
     </nav>
     <section id="aCieloAbierto" class="">
         <div class="contenedor">
-            <p class="texto text-small-caps">
+            <p class="texto ps-5 pe-5 border">
                 ¿Qué sueñan les niñes adolescentes y jóvenes que viven en Guernica?<br>
 
                 Nacer pobre en este país significa vivir en desigualdad de condiciones. Falta de acceso a los derechos

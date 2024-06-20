@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Susi Maresca</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/myStyle.css">
+    <style>
+        .cuadro {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .txt {
+            font-family: 'Roboto', sans-serif;
+            border: 2px solid white;
+            width: 100%;
+            height: 100%;
+            padding: 10%;
+            font-size: 1.1em;
+            align-items: center;
+        }
+
+        @media (min-width: 768px) {
+            .txt {
+                width: 40vw;
+            }
+        }
+
+        .navbar {
+            background-color: #000;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+        }
+
+        .navbar-nav .nav-link {
+            color: #fff !important;
+            font-size: 1.1rem;
+            margin-left: 10px;
+        }
+
+        .targimg {
+            width: 100%;
+            height: auto;
+        }
+
+        .overlayImg {
+            width: 100%;
+            height: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .tarjeta:hover .overlayImg {
+            opacity: 1;
+        }
+
+        .mosaico .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .tarjeta {
+            position: relative;
+        }
+
+        .body {
+            background-color: #000;
+            color: #fff;
+        }
+
+        .footer {
+            padding: 1rem;
+            background-color: #000;
+        }
+
+        @media (max-width: 576px) {
+            .txt {
+                padding: 5%;
+                font-size: 1em;
+            }
+
+            .navbar-nav {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body class="body bg-black">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-black">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light text-small-caps nombre" href="index.html">Susi Maresca</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-small-caps">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="proyectos.html"><b>Proyectos</b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="libro.html" class="dropdown-item">La ruta del litio, voces del agua</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="historias.html">Historias</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="aCielo.html" class="dropdown-item">A cielo abierto</a>
+                            </li>
+                            <li>
+                                <a href="recuper.html" class="dropdown-item">Tierra</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bio.html">Bio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="proyects" class="mt-4">
+        <!-- <img class="fondimg fixed-top" src="images/lrdlvocesdelagua/Portada/0b.jpg"> -->
+        <div class="mosaico">
+            <div class="row m-4">
+                <div class="col-12 col-md-6 tarjeta">
+                    <a href="libro.html">
+                        <img class="overlayImg" src="images/lrdlvocesdelagua/Portada/1t.png" alt="">
+                        <img class="targimg" src="images/lrdlvocesdelagua/Portada/Loquequeda.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 cuadro">
+                    <p class="txt">
+                        Una primera aproximación al libro <b>La ruta del litio: voces del agua</b> nos acerca a las diversas formas de saqueo. Camila Parodi y Susi Maresca proponen un viaje a través de diferentes formas de saqueo que se multiplican en las provincias argentinas de Jujuy, Salta, Catamarca, Tucumán. Saqueo de montañas. Saqueo de Puna. Saqueos en inglés, en chino, en alemán, en coreano y en español. Saqueo que seca, que rompe, que contamina, que mata. Saqueo que no admite las preguntas por el pasado o el futuro. Saqueo en eterno presente. Saqueo sin territorio. Saqueo que, como todo extractivismo, acapara bienes comunes, aumenta la desigualdad, deteriora la vida.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-white text-center">
+        <p>&copy; 2024 - Susi Maresca - Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const imgs = document.querySelectorAll('.fade-in');
+            setTimeout(() => {
+                imgs.forEach(img => {
+                    img.classList.add('show');
+                });
+            }, 10);
+        });
+    </script>
+</body>
+
+</html>

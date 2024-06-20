@@ -11,7 +11,48 @@
         href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/myStyle.css">
+<style>
+    .overlay {
+            position: absolute;
+            background-color: rgba(145, 145, 145, 0.767);
+            top: 0;
+            /* left: 0; */
+            width: 75%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            transition: opacity 0.7s ease-out;
+            padding: 2rem;
+            color: white;
+            /* gap: 2; */
+        }
 
+        .tarjeta:hover .overlay {
+            opacity: 1;
+        }
+
+        .carC {
+            font-family: 'Roboto' sans-serif;
+            font-weight: 800;
+            color: rgb(83, 83, 83);
+            font-size: 1.5rem;
+        }
+
+        .carT {
+            font-family: 'Roboto' sans-serif;
+            font-weight: 500;
+            color: white;
+            font-size: 2rem;
+        }
+
+        .carL {
+            font-family: 'Roboto' sans-serif;
+            font-style: italic;
+            color: rgb(73, 73, 73);
+            font-weight: 500;
+            font-size: 1.5rem;
+        }
+</style>
 </head>
 
 <body class="body bg-black">
@@ -23,17 +64,32 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <h1 class="subTit text-small-caps d-none d-lg-block">Jujuy</h1>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto text-small-caps">
                     <li class="nav-item">
+                        <p class="nav-link"><b>Jujuy</b>&emsp;|</p>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="index.html">Inicio</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item dropdown">
                         <a class="nav-link" href="proyectos.html">Proyectos</a>
+                        <ul class="dropdown-menu">
+                            <li >
+                                <a href="libro.html" class="dropdown-item">La ruta del litio, voces del agua</a>
+                            </li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item dropdown">
                         <a class="nav-link" href="historias.html">Historias</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="aCielo.html" class="dropdown-item">A cielo abierto</a>
+                            </li>
+                            <li>
+                                <a href="recuper.html" class="dropdown-item">Tierra</a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="bio.html">Bio</a>
@@ -45,19 +101,25 @@
             </div>
         </div>
     </nav>
-    <section id="jujuy" class="conteinermt-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-6 tarjeta pt-5 mt-5">
+    <section id="jujuy" class="mt-4">
+        <div class="mosaico">
+            <div class="row m-4">
+                <div class="col-6 tarjeta">
                     <a href="losPueblosDeLaSal.html">
-                        <img src="images/lrdlvocesdelagua/Capitulo5/LosPueblosDeLaSal/caratulas.png" class="overlayImg" alt="">
-                        <img src="images/lrdlvocesdelagua/Capitulo5/LosPueblosDeLaSal/1 Portada.jpg" class="targimg" alt="">
+                        <p class="overlay"><span class="carC text-small-caps">Jujuy</span><br>
+                            <span class="carT text-small-caps">Los pueblos de la sal</span>
+                            
+                        </p>
+                        <img src="images/lrdlvocesdelagua/Capitulo5/LosPueblosDeLaSal/1-P.jpg" class="targimg" alt="">
                     </a>
                 </div>
-                <div class="col-6 tarjeta pt-5 mt-5">
+                <div class="col-6 tarjeta">
                     <a href="3erMalon.html">
-                        <img src="images/lrdlvocesdelagua/Capitulo5/3erMalon/caratulas.png" class="overlayImg" alt="">
-                        <img src="images/lrdlvocesdelagua/Capitulo5/3erMalon/1-Portada título.jpg" class="targimg" alt="">
+                        <p class="overlay"><span class="carC text-small-caps">Jujuy</span><br>
+                            <span class="carT text-small-caps">Tercer malón de la paz</span>
+                            
+                        </p>
+                        <img src="images/lrdlvocesdelagua/Capitulo5/3erMalon/1-P.jpg" class="targimg" alt="">
                     </a>
                 </div>
             </div>
