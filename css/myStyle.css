@@ -127,9 +127,11 @@
 
 .pres {
     text-align: right;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Montserrat", sans-serif;
     width: 100%;
-    
+    font-size: 0.9rem;
+    color: black;
+    font-weight: 600;
 }
 
 .marco {
@@ -238,7 +240,7 @@
 .dropdown-menu {
     display: none;
     position: absolute;
-    background-color: rgba(39, 39, 39, 0.616);
+    background-color: rgba(39, 39, 39, 0.950);
     list-style: none;
     z-index: 1000;
     margin: 0;
@@ -261,11 +263,12 @@
 }
 
 .dropdown-menu a:hover {
-    background-color: rgba(78, 78, 78, 0.596);
+    background-color: rgba(78, 78, 78, 0.900);
     color: white;
 }
 
 @media (min-width: 768px) {
+    
     .navbar-brand {
         font-size: 2rem;
         
