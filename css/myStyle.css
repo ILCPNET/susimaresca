@@ -70,11 +70,12 @@
     font-size: 1.5rem;
 }
 
-.tarjeta {
+.navbar2 {
     position: relative;
     overflow: hidden;
     /* gap: 2; */
 }
+
 
 .targimg {
     gap: 2;
