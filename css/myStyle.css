@@ -143,6 +143,9 @@
     height: 3em;
     text-align: center;
     align-content: center;
+    font-weight: 300;
+    font-family: "Open Sans";
+    font-size: small;
 }
 
 .contenedor {
@@ -267,11 +270,11 @@
     color: white;
 }
 
-@media (min-width: 768px) {
-    
+@media (max-width: 768px) {
+
     .navbar-brand {
         font-size: 2rem;
-        
+
     }
 
     .subTit {

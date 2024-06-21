@@ -10,90 +10,51 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/myStyle.css">
     <style>
-        .cuadro {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .txt {
-            font-family: 'Roboto', sans-serif;
-            border: 2px solid white;
-            width: 100%;
-            height: 100%;
-            padding: 10%;
-            font-size: 1.1em;
-            align-items: center;
-        }
-
-        @media (min-width: 768px) {
-            .txt {
-                width: 40vw;
-            }
-        }
-
-        .navbar {
-            background-color: #000;
-        }
-
-        .navbar-brand {
-            font-size: 1.5rem;
-        }
-
-        .navbar-nav .nav-link {
-            color: #fff !important;
-            font-size: 1.1rem;
-            margin-left: 10px;
-        }
-
-        .targimg {
-            width: 100%;
-            height: auto;
-        }
-
-        .overlayImg {
-            width: 100%;
-            height: auto;
+        .overlay {
             position: absolute;
+            background-color: rgba(70, 70, 70, 0.950);
             top: 0;
-            left: 0;
+            /* left: 0; */
+            width: 75%;
+            height: 100%;
+            object-fit: cover;
             opacity: 0;
-            transition: opacity 0.3s ease-in-out;
+            transition: opacity 0.7s ease-out;
+            padding: 2rem;
+            color: white;
+            line-height: normal;
+            /* gap: 2; */
         }
 
-        .tarjeta:hover .overlayImg {
+        .tarjeta:hover .overlay {
             opacity: 1;
         }
 
-        .mosaico .row {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+        .carC {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 800;
+            color: rgb(134, 134, 134);
+            font-size: 1.5rem;
         }
 
-        .tarjeta {
-            position: relative;
+        .carT {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            color: white;
+            font-size: 2rem;
         }
 
-        .body {
-            background-color: #000;
-            color: #fff;
+        .carL {
+            font-family: 'Roboto', sans-serif;
+            font-style: italic;
+            color: rgb(31, 31, 31);
+            font-weight: 600;
+            font-size: 1.7rem;
         }
 
-        .footer {
-            padding: 1rem;
-            background-color: #000;
-        }
-
-        @media (max-width: 576px) {
-            .txt {
-                padding: 5%;
-                font-size: 1em;
-            }
-
-            .navbar-nav {
-                flex-direction: column;
-                text-align: center;
+        @media (max-width: 768px) {
+            #libro {
+                padding-top: 8vw; /* Ajusta este valor según sea necesario */
             }
         }
     </style>
@@ -104,16 +65,20 @@
     <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-black">
         <div class="container-fluid">
             <a class="navbar-brand text-light text-small-caps nombre" href="index.html">Susi Maresca</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto text-small-caps">
                     <li class="nav-item">
+                        <p class="nav-link"><b>La Ruta del Litio, Voces del Agua</b>&emsp;|</p>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="proyectos.html"><b>Proyectos</b></a>
+                        <a class="nav-link" href="proyectos.html">Proyectos</a>
                         <ul class="dropdown-menu">
                             <li>
                                 <a href="libro.html" class="dropdown-item">La ruta del litio, voces del agua</a>
@@ -141,20 +106,88 @@
             </div>
         </div>
     </nav>
-    <section id="proyects" class="mt-4">
-        <!-- <img class="fondimg fixed-top" src="images/lrdlvocesdelagua/Portada/0b.jpg"> -->
+    <section id="libro" class="mt-4">
         <div class="mosaico">
-            <div class="row m-4">
-                <div class="col-12 col-md-6 tarjeta">
-                    <a href="libro.html">
-                        <img class="overlayImg" src="images/lrdlvocesdelagua/Portada/1t.png" alt="">
-                        <img class="targimg" src="images/lrdlvocesdelagua/Portada/Loquequeda.jpg" alt="">
+            <div class="row m-4 ">
+                <div class="col-6 tarjeta">
+                    <a href="capitulo1.html">
+                        <p class="overlay"><span class="carC text-small-caps">CAPITULO 1</span><br>
+                            <span class="carT text-small-caps">Tafi del Valle<br>Es la hora de los pueblos</span>
+                            <br><span class="carL text-small-caps">Tucuman</span>
+                        </p>
+                        <img class="targimg" src="images/lrdlvocesdelagua/Capitulo1/1-P.jpg" alt="">
                     </a>
                 </div>
-                <div class="col-12 col-md-6 cuadro">
-                    <p class="txt">
-                        Una primera aproximación al libro <b>La ruta del litio: voces del agua</b> nos acerca a las diversas formas de saqueo. Camila Parodi y Susi Maresca proponen un viaje a través de diferentes formas de saqueo que se multiplican en las provincias argentinas de Jujuy, Salta, Catamarca, Tucumán. Saqueo de montañas. Saqueo de Puna. Saqueos en inglés, en chino, en alemán, en coreano y en español. Saqueo que seca, que rompe, que contamina, que mata. Saqueo que no admite las preguntas por el pasado o el futuro. Saqueo en eterno presente. Saqueo sin territorio. Saqueo que, como todo extractivismo, acapara bienes comunes, aumenta la desigualdad, deteriora la vida.
-                    </p>
+                <div class="col-6 tarjeta">
+                    <a href="capitulo2.html">
+                        <p class="overlay"><span class="carC text-small-caps">CAPITULO 2</span><br>
+                            <span class="carT text-small-caps">Salar del Hombre Muerto<br>y Antofagasta de la
+                                Sierra<br>La sal de la tierra</span>
+                            <br><span class="carL text-small-caps">Catamarca</span>
+                        </p>
+                        <img class="targimg" src="images/lrdlvocesdelagua/Capitulo2/1-P.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="row m-4">
+                <div class="col-6 tarjeta">
+                    <a href="capitulo3.html">
+                        <p class="overlay"><span class="carC text-small-caps">CAPITULO 3</span><br>
+                            <span class="carT text-small-caps">Fiambalá<br>El cuento chino del oro blanco</span>
+                            <br><span class="carL text-small-caps">Catamarca</span>
+                        </p>
+                        <img class="targimg" src="images/lrdlvocesdelagua/Capitulo3/1-P.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-6 tarjeta">
+                    <a href="capitulo4.html">
+                        <p class="overlay"><span class="carC text-small-caps">CAPITULO 4</span><br>
+                            <span class="carT text-small-caps">Andalgalá<br>Las enseñanzas de Andalgalá</span>
+                            <br><span class="carL text-small-caps">Catamarca</span>
+                        </p>
+                        <img class="targimg" src="images/lrdlvocesdelagua/Capitulo4/1-P.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="row m-4">
+                <div class="col-6 tarjeta">
+                    <a href="capitulo5.html">
+                        <p class="overlay"><span class="carC text-small-caps">CAPITULO 5</span><br>
+                            <span class="carT text-small-caps">Jujuy</span>
+                            <br><span class="carL text-small-caps">Jujuy</span>
+                        </p>
+                        <img class="targimg" src="images/lrdlvocesdelagua/Capitulo5/3erMalon/1-P.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-6 tarjeta">
+                    <a href="capitulo6.html">
+                        <p class="overlay"><span class="carC text-small-caps">CAPITULO 6</span><br>
+                            <span class="carT text-small-caps">A dónde van a parar <br>los deshechos que no se
+                                quedaron</span>
+                            <br><span class="carL text-small-caps">Salta</span>
+                        </p>
+                        <img class="targimg" src="images/lrdlvocesdelagua/Capitulo6/1-P.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="row m-4">
+                <div class="col-6 tarjeta">
+                    <a href="ancasti.html">
+                        <p class="overlay"><span class="carC text-small-caps">CAPITULO 7</span><br>
+                            <span class="carT text-small-caps">Ancasti - Anquincila</span>
+                            <br><span class="carL text-small-caps">Catamarca</span>
+                        </p>
+                        <img class="targimg" src="images/lrdlvocesdelagua/Ancasti/1-P.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-6 tarjeta">
+                    <a href="belen.html">
+                        <p class="overlay"><span class="carC text-small-caps">CAPITULO 8</span><br>
+                            <span class="carT text-small-caps">Belén</span>
+                            <br><span class="carL text-small-caps">Catamarca</span>
+                        </p>
+                        <img class="targimg" src="images/lrdlvocesdelagua/Belen/1-P.jpg" alt="">
+                    </a>
                 </div>
             </div>
         </div>

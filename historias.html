@@ -19,29 +19,38 @@
         }
 
         .img {
-            padding-left: 5px;
-            padding-right: 5px;
+            padding-left: 5vw;
+            padding-right: 5vw;
             width: 100%;
             height: 100%;
-            
+
         }
 
         .conten a {
             text-decoration: none;
-            color: white;
-            text-align: center;
+            color: rgb(0, 0, 0);
+            text-align: left;
+            font-family: "Roboto", sans-serif;
 
+        }
+
+        @media (max-width: 768px) {
+
+            #historias {
+                padding-top: 10vw;
+            }
         }
     </style>
 </head>
 
-<body class="body bg-black">
+<body class="body bg-white">
     <!-- Home Section -->
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-black">
         <div class="container-fluid">
             <a class="navbar-brand text-light text-small-caps nombre" href="index.html">Susi Maresca</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -52,7 +61,7 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link" href="proyectos.html">Proyectos</a>
                         <ul class="dropdown-menu">
-                            <li >
+                            <li>
                                 <a href="libro.html" class="dropdown-item">La ruta del litio, voces del agua</a>
                             </li>
                         </ul>
@@ -79,16 +88,59 @@
         </div>
     </nav>
     <section id="historias" class="conten">
-        <div class="text-small-caps">
-            <a href="aCielo.html">
-                <h2> A cielo abierto</h2>
-                <img src="images/historias/A CIELO ABIERTO/01 portada.jpg" alt="" class="img">
-            </a>
-            <a href="recuper.html">
-                <h2>Tierras</h2>
+        <div class="row m-2">
+            <div class="col-4">
+                <a href="aCielo.html">
+                    <div class="text-small-caps">
+                        <div>
+                            <h5><b>&emsp;A cielo abierto&emsp;|</b></h5>
+                            <p>En la localidad de Luján, a 67 km de la Ciudad Autónoma de Buenos Aires y a unos pocos
+                                metros de la
+                                basílica, está uno de los basurales a cielo abierto más grandes de Argentina y que se
+                                suma a los 5000
+                                basurales a cielo abierto que existen en el país. <br>“La quema”, así se llama, es un
+                                predio
+                                municipal de 12
+                                hectáreas que existe hace 50 años a donde llegan, sin un tratamiento previo,
+                                aproximadamente, 120
+                                toneladas de basura por día. Allí, se producen incendios con frecuencia por la
+                                acumulación tóxica que
+                                generan los desechos, por eso su nombre.</p>
+                </a>
+            </div>
+        </div>
+        </div>
+        <div class="col-6">
+            <img src="images/historias/A CIELO ABIERTO/01 portada.jpg" alt="" class="img">
+        </div>
 
+        </div>
+        <div class="row m-2">
+            <div class="col-4">
+                <div class="text-small-caps">
+                    <a href="recuper.html">
+                        <h5><b>&emsp;Tierras&emsp;|</b></h5>
+                        <p>
+                            ¿Qué sueñan les niñes adolescentes y jóvenes que viven en Guernica?<br>
+                            Nacer pobre en este país significa vivir en desigualdad de condiciones. Falta de acceso a
+                            los derechos
+                            fundamentales: derecho a la salud, a la vivienda digna, a la alimentación, a la educación,
+                            al trabajo,
+                            al agua. Esos derechos que muchos de los que se llenan la boca hablando de propiedad privada
+                            tienen
+                            naturalizados, porque abren una canilla y sale agua.
+                            Les pibes de la toma de Guernica no tienen canilla, ni agua, ni casas de material,
+                            construyen sus viviendas con plásticos y troncos a la par de les adultes que hacen más de lo
+                            que pueden.
+                           
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-6">
                 <img src="images/historias/tierra/1 Portada.JPG" alt="" class="img">
-            </a>
+            </div>
+        </div>
         </div>
     </section>
     <!-- Footer -->
