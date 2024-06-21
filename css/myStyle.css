@@ -232,15 +232,15 @@
 }
 
 .texto {
-    padding: 1rem;
+    padding: 0.5rem;
     margin-top: 7vw;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     line-height: 1.5;
-    font-weight: 400;
+    font-weight: 500;
     text-align: right;
     color: black;
     border: 1px solid black;
+    font-variant: small-caps;
 }
 
 .dropdown-menu {
