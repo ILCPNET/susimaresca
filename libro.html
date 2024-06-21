@@ -59,6 +59,7 @@
             #libro {
                 padding-top: 10vw;
             }
+           
         }
     </style>
 </head>
@@ -218,7 +219,21 @@
                     img.classList.add('show');
                 });
             }, 10);
+            function checkScreenWidth(){
+                const isMobile = window.innerWidth <= 768;
+                const overlays = document.querySelectorAll('.overlay');
+                overlays.forEach( overlay => {
+                    if(isMobile){
+                        overlay.classList.remove('.overlay')
+                    }else{
+                        overlay.classList.add('.overlay');
+                    }
+                });
+            }
+            checkScreenWidth();
+            window.addEventListener('resize',checkScreenWidth);
         });
+        
     </script>
 </body>
 
