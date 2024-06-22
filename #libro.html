@@ -14,14 +14,14 @@
     <style>
         .overlay {
             position: absolute;
-            /* background-color: rgba(70, 70, 70, 0.950); */
+            background-color: rgba(70, 70, 70, 0.950);
             top: 0;
             /* left: 0; */
             width: 75%;
             height: 100%;
             object-fit: cover;
-            /* opacity: 0;
-            transition: opacity 0.7s ease-out; */
+            opacity: 0;
+            transition: opacity 0.7s ease-out;
             padding: 2rem;
             color: white;
             line-height: normal;
@@ -33,34 +33,25 @@
         }
 
         .carC {
-            font-family: "Montserrat", sans-serif;
-            font-weight: 600;
-            color: rgb(54, 54, 54);
-            font-size: 0.9rem;
+            font-family: 'Roboto' sans-serif;
+            font-weight: 800;
+            color: rgb(134, 134, 134);
+            font-size: 1.5rem;
         }
 
         .carT {
-            font-family: "Barlow", sans-serif;
+            font-family: 'Roboto' sans-serif;
             font-weight: 500;
-            color: rgb(0, 0, 0);
-            font-size: 0.9rem;
-            font-variant: none;
+            color: white;
+            font-size: 2rem;
         }
 
         .carL {
-            font-family: "Barlow", sans-serif;
+            font-family: 'Roboto' sans-serif;
             font-style: italic;
             color: rgb(31, 31, 31);
             font-weight: 600;
-            font-size: 0.8rem;
-        }
-
-        .bor {
-            border-right: 1px solid black;
-        }
-
-        .borL {
-            border-left: 1px solid black;
+            font-size: 1.7rem;
         }
 
         @media (max-width: 768px) {
@@ -68,32 +59,12 @@
             #libro {
                 padding-top: 10vw;
             }
-
-            .carC {
-                font-size: 0.7rem;
-                color: rgb(100, 100, 100);
-            }
-
-            .carT {
-                font-size: 0.6rem;
-                color: rgb(50, 50, 50);
-            }
-
-            .carL {
-                font-size: 0.5rem;
-                color: rgb(70, 70, 70);
-            }
-
-            .overlay {
-                width: 100%;
-                padding: 0.7rem;
-            }
-
+           
         }
     </style>
 </head>
 
-<body class="body bg-white">
+<body class="body bg-black">
 
 
     <!-- Navigation -->
@@ -145,112 +116,88 @@
         <!-- <img class="fondimg fixed-top" src="images/lrdlvocesdelagua/Portada/0b.jpg"> -->
         <div class="mosaico">
             <div class="row m-4 ">
-                <div class="col-6 col-md-3 tarjeta borL">
-                    <p class="overlay"><span class="carC text-small-caps">CAPITULO 1&emsp;|</span><br>
-                        <span class="carT text-small-caps">Tafi del Valle<br>Es la hora de los pueblos</span><br>
-                        <span class="carL text-small-caps">Tucuman</span>
-                    </p>
-                </div>
-                <div class="col-6 col-md-3 tarjeta">
+                <div class="col-6 tarjeta">
                     <a href="capitulo1.html">
+                        <p class="overlay"><span class="carC text-small-caps">CAPITULO 1</span><br>
+                            <span class="carT text-small-caps">Tafi del Valle<br>Es la hora de los pueblos</span>
+                            <br><span class="carL text-small-caps">Tucuman</span>
+                        </p>
                         <img class="targimg" src="images/lrdlvocesdelagua/Capitulo1/1-P.jpg" alt="">
                     </a>
-
                 </div>
-                <div class="col-6 col-md-3 tarjeta">
+                <div class="col-6 tarjeta">
                     <a href="capitulo2.html">
+                        <p class="overlay"><span class="carC text-small-caps">CAPITULO 2</span><br>
+                            <span class="carT text-small-caps">Salar del Hombre Muerto<br>y Antofagasta de la
+                                Sierra<br>La sal de la tierra</span>
+                            <br><span class="carL text-small-caps">Catamarca</span>
+                        </p>
                         <img class="targimg" src="images/lrdlvocesdelagua/Capitulo2/1-P.jpg" alt="">
                     </a>
-
-                </div>
-                <div class="col-6 col-md-3 tarjeta bor">
-                    <p class="overlay"><span class="carC text-small-caps">CAPITULO 2&emsp;|</span><br>
-                        <span class="carT ">Salar del Hombre Muerto<br>y Antofagasta de la
-                            Sierra<br>La sal de la tierra</span>
-                        <br><span class="carL text-small-caps">Catamarca</span>
-                    </p>
                 </div>
             </div>
             <div class="row m-4">
-                <div class="col-6 col-md-3 tarjeta borL">
-                    <p class="overlay"><span class="carC text-small-caps">CAPITULO 3&emsp;|</span><br>
-                        <span class="carT text-small-caps">Fiambalá<br>El cuento chino del oro blanco</span>
-                        <br><span class="carL text-small-caps">Catamarca</span>
-                    </p>
-                </div>
-                <div class="col-6 col-md-3 tarjeta">
+                <div class="col-6 tarjeta">
                     <a href="capitulo3.html">
+                        <p class="overlay"><span class="carC text-small-caps">CAPITULO 3</span><br>
+                            <span class="carT text-small-caps">Fiambalá<br>El cuento chino del oro blanco</span>
+                            <br><span class="carL text-small-caps">Catamarca</span>
+                        </p>
                         <img class="targimg" src="images/lrdlvocesdelagua/Capitulo3/1-P.jpg" alt="">
                     </a>
-
                 </div>
-                <div class="col-6 col-md-3 tarjeta">
+                <div class="col-6 tarjeta">
                     <a href="capitulo4.html">
+                        <p class="overlay"><span class="carC text-small-caps">CAPITULO 4</span><br>
+                            <span class="carT text-small-caps">Andalgalá<br>Las enseñansas de Andalgalá</span>
+                            <br><span class="carL text-small-caps">Catamarca</span>
+                        </p>
                         <img class="targimg" src="images/lrdlvocesdelagua/Capitulo4/1-P.jpg" alt="">
                     </a>
-
-                </div>
-                <div class="col-6 col-md-3 tarjeta bor">
-                    <p class="overlay"><span class="carC text-small-caps">CAPITULO 4&emsp;|</span><br>
-                        <span class="carT text-small-caps">Andalgalá<br>Las enseñansas de Andalgalá</span>
-                        <br><span class="carL text-small-caps">Catamarca</span>
-                    </p>
                 </div>
             </div>
-        </div>
-        <div class="row m-4">
-            <div class="col-6 col-md-3 tarjeta borL">
-                <p class="overlay"><span class="carC text-small-caps">CAPITULO 5&emsp;|</span><br>
-                    <span class="carT text-small-caps">Jujuy</span>
-                    <br><span class="carL text-small-caps">Jujuy</span>
-                </p>
-            </div>
-            <div class="col-6 col-md-3 tarjeta">
-                <a href="capitulo5.html">
-                    <img class="targimg" src="images/lrdlvocesdelagua/Capitulo5/3erMalon/1-P.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-6 col-md-3 tarjeta">
-                <a href="capitulo6.html">
-                    <img class="targimg" src="images/lrdlvocesdelagua/Capitulo6/1-P.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-6 col-md-3 tarjeta bor">
-                <p class="overlay"><span class="carC text-small-caps">CAPITULO 6&emsp;|</span><br>
-                    <span class="carT text-small-caps">A dónde van a parar <br>los deshechos que no se
-                        quedaron</span>
-                    <br><span class="carL text-small-caps">Salta</span>
-                </p>
+            <div class="row m-4">
+                <div class="col-6 tarjeta">
+                    <a href="capitulo5.html">
+                        <p class="overlay"><span class="carC text-small-caps">CAPITULO 5</span><br>
+                            <span class="carT text-small-caps">Jujuy</span>
+                            <br><span class="carL text-small-caps">Jujuy</span>
+                        </p>
+                        <img class="targimg" src="images/lrdlvocesdelagua/Capitulo5/3erMalon/1-P.jpg" alt="">
 
+                    </a>
+                </div>
+                <div class="col-6 tarjeta">
+                    <a href="capitulo6.html">
+                        <p class="overlay"><span class="carC text-small-caps">CAPITULO 6</span><br>
+                            <span class="carT text-small-caps">A dónde van a parar <br>los deshechos que no se
+                                quedaron</span>
+                            <br><span class="carL text-small-caps">Salta</span>
+                        </p>
+                        <img class="targimg" src="images/lrdlvocesdelagua/Capitulo6/1-P.jpg" alt="">
+                    </a>
+                </div>
             </div>
-        </div>
-        <div class="row m-4">
-            <div class="col-6 col-md-3 tarjeta borL">
-                <p class="overlay"><span class="carC text-small-caps">CAPITULO 7&emsp;|</span><br>
-                    <span class="carT text-small-caps">Ancasti - Anquincila</span>
-                    <br><span class="carL text-small-caps">Catamarca</span>
-                </p>
+            <div class="row m-4">
+                <div class="col-6 tarjeta">
+                    <a href="ancasti.html">
+                        <p class="overlay"><span class="carC text-small-caps">CAPITULO 7</span><br>
+                            <span class="carT text-small-caps">Ancasti - Anquincila</span>
+                            <br><span class="carL text-small-caps">Catamarca</span>
+                        </p>
+                        <img class="targimg" src="images/lrdlvocesdelagua/Ancasti/1-P.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-6 tarjeta">
+                    <a href="belen.html">
+                        <p class="overlay"><span class="carC text-small-caps">CAPITULO 8</span><br>
+                            <span class="carT text-small-caps">Belén</span>
+                            <br><span class="carL text-small-caps">Catamarca</span>
+                        </p>
+                        <img class="targimg" src="images/lrdlvocesdelagua/Belen/1-P.jpg" alt="">
+                    </a>
+                </div>
             </div>
-            <div class="col-6 col-md-3 tarjeta">
-                <a href="ancasti.html">
-                    <img class="targimg" src="images/lrdlvocesdelagua/Ancasti/1-P.jpg" alt="">
-                </a>
-
-            </div>
-            <div class="col-6 col-md-3 tarjeta">
-                <a href="belen.html">
-                    <img class="targimg" src="images/lrdlvocesdelagua/Belen/1-P.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-6 col-md-3 tarjeta bor">
-                <p class="overlay"><span class="carC text-small-caps">CAPITULO 8&emsp;|</span><br>
-                    <span class="carT text-small-caps">Belén</span>
-                    <br><span class="carL text-small-caps">Catamarca</span>
-                </p>
-
-            </div>
-
-        </div>
 
 
         </div>
@@ -272,21 +219,21 @@
                     img.classList.add('show');
                 });
             }, 10);
-            function checkScreenWidth() {
+            function checkScreenWidth(){
                 const isMobile = window.innerWidth <= 768;
                 const overlays = document.querySelectorAll('.overlay');
-                overlays.forEach(overlay => {
-                    if (isMobile) {
+                overlays.forEach( overlay => {
+                    if(isMobile){
                         overlay.classList.remove('.overlay')
-                    } else {
+                    }else{
                         overlay.classList.add('.overlay');
                     }
                 });
             }
             checkScreenWidth();
-            window.addEventListener('resize', checkScreenWidth);
+            window.addEventListener('resize',checkScreenWidth);
         });
-
+        
     </script>
 </body>
 
