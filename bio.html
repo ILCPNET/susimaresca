@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Susi Maresca</title>
+    <meta name="description" content="Susi Maresca, Fotografa documentalista, Fotoperiodista, Pedagoga Social.">
+    <meta name="keywords" content="Susi Maresca, Fotografa Independiente, Fotografia Profesional, Ruta del Litio, Voces del Agua, Argentina Arde, Red de Accion Fotografica, Historias, Noticias, Investigaciones, Chirimbote">
+    <meta name="author" content="Susi Maresca">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <Link rel="stylesheet" href="css/myStyle.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        .navbar2 {
+            background-color: black;
+        }
+
+        .bio {
+            margin-left: 6rem;
+            width: auto;
+            height: 72vh;
+            padding-top: 0;
+        }
+
+        #pres {
+            font-family: "Montserrat", sans-serif;
+            width: 100%;
+            font-size: 0.9rem;
+            color: white;
+            font-weight: 400;
+            text-align: justify;
+        }
+        /* Estilo para cambiar la orientación del menú solo para el capitulo 5 */
+        .dropdown-menu[data-orientation="left"] {
+            left: auto;
+            right: 100%;
+        }
+        .fade-in {
+            opacity: 0;
+            animation: fade-in 2s forwards;
+        }
+        
+        @keyframes fade-in {
+            to {
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 768px) {
+
+            #bio {
+                display: block;
+                flex-direction: column;
+
+            }
+
+            .bios {
+                margin: 5vw;
+                
+                width: 100vw;
+                height: auto;
+            }
+            
+
+            .pres {
+                font-size: 0.8rem;
+            }
+
+        }
+    </style>
+</head>
+
+<body class="body bg-black">
+    <!-- Home Section -->
+    <section id="bio" class="">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar2 navbar-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand text-light text-small-caps nombre" href="index.html">Susi Maresca</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto text-small-caps">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="proyectos.html">Proyectos</a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item dropdown dropdown-submenu">
+                                    <a href="libro.html" class="dropdown-item">La ruta del litio, voces del agua</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="capitulo1.html" class="dropdown-item">Capitulo 1</a></li>
+                                        <li><a href="capitulo2.html" class="dropdown-item">Capitulo 2</a></li>
+                                        <li><a href="capitulo3.html" class="dropdown-item">Capitulo 3</a></li>
+                                        <li><a href="capitulo4.html" class="dropdown-item">Capitulo 4</a></li>
+                                        <li class="nav-item dropdown dropdown-submenu">
+                                            <a href="capitulo5.html" class="dropdown-item">Capitulo 5</a>
+                                            <ul class="dropdown-menu" data-orientation="left">
+                                                <li class="nav-item dropdown dropdown-submenu">
+                                                    <a href="losPueblosDeLaSal.html" class="dropdown-item">Los Pueblos de la Sal</a>
+                                                </li>
+                                                <li>
+                                                    <a href="3erMalon.html" class="dropdown-item">Tercer Malon de la Paz</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="capitulo6.html" class="dropdown-item">Capitulo 6</a></li>
+                                        <li><a href="capitulo7.html" class="dropdown-item">Capitulo 7</a></li>
+                                        <li><a href="capitulo8.html" class="dropdown-item">Capitulo 8</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="historias.html">Historias</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="aCielo.html" class="dropdown-item">A cielo abierto</a>
+                                </li>
+                                <li>
+                                    <a href="recuper.html" class="dropdown-item">Tierra</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link">Noticias</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="nac.html" class="dropdown-item">Public. medios nacionales</a>
+                                </li>
+                                <li>
+                                    <a href="inter.html" class="dropdown-item">Public. medios internacionales</a>
+                                </li>
+                                <li>
+                                    <a href="conc.html" class="dropdown-item">Concursos y Publicaciones</a>
+                                </li>
+                                <li>
+                                    <a href="diflrdl.html" class="dropdown-item">Difusión La Ruta del Litio</a>
+                                </li>
+                                <li>
+                                    <a href="entrev.html" class="dropdown-item">Entrevistas</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="multi.html" class="nav-link">Multimedia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="bio.html"><b>Bio</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://www.instagram.com/susi.maresca" class="nav-link" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="bk mt-5 fade-in">
+            <div class="row m-2 pt-5">
+                <div class="col-12 col-md-6">
+                    <img class="bios" src="images/bio/fot.jpg"  alt="">
+                </div>
+                <div class="col-12 col-md-6 p-2 ">
+                    <div class="marco m-1">
+                        <p id="pres"></p>
+                        <p style="display: none;" id="previa">
+                            Nació en Buenos Aires el 14 de octubre de 1978. Estudió fotografía con varios maestros y de
+                            manera autodidacta desde los 18 años. Actualmente trabaja como fotógrafa en la Casa Nacional
+                            del Bicentenario - Ministerio de Cultura de la Nación Argentina y como fotoperiodista para
+                            diversos medios de comunicación nacionales e internacionales. Además es Pedagoga Social con
+                            orientación en antropología educativa, profesión que le permitió ampliar la mirada en las
+                            comunidades afectadas por las desigualdades sociales y territoriales durante 15 años.
+                            Participó de varios colectivos fotográficos independientes, entre ellos Argentina Arde y La
+                            Red de acción fotográfica y de publicaciones fotográficas para el Museo Etnográfico, Museo
+                            del Grabado, el Centro de Arte Sonoro, la Universidad de Hurlingham, Sipreba, con una
+                            mención del Mercosur en el Concurso fotográfico “Personas Mayores: Derecho al Cuidado” y en
+                            el proyecto Onewater de la Unesco. Desde el año 2019 registra en los territorios las
+                            problemáticas vinculadas a la tierra y al agua a causa del extractivismo, la megaminería y
+                            la explotación de litio en distintos lugares de Argentina.<br>
+                            Es coautora del libro “La ruta del litio: Voces del agua” editado por Chirimbote.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer text-white text-center bg-black fixed-bottom ">
+        <p>&copy; 2024 - Susi Maresca - Todos los derechos reservados.</p>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const textToType = document.getElementById('previa').textContent;
+            const typedContent = document.getElementById('pres');
+            let index = 0;
+            const typingSpeed = 60; // Velocidad de escritura en milisegundos
+
+            function type() {
+                if (index < textToType.length) {
+                    typedContent.textContent += textToType.charAt(index);
+                    index++;
+                    requestAnimationFrame(type);
+                }
+            }
+
+            function startTyping() {
+                setTimeout(type, typingSpeed);
+            }
+
+            startTyping();
+        });
+    </script>
+</body>
+
+</html>

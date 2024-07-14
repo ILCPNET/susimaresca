@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Susi Maresca</title>
+    <meta name="description" content="Susi Maresca, Fotografa documentalista, Fotoperiodista, Pedagoga Social.">
+    <meta name="keywords" content="Susi Maresca, Fotografa Independiente, Fotografia Profesional, Ruta del Litio, Voces del Agua, Argentina Arde, Red de Accion Fotografica, Historias, Noticias, Investigaciones, Chirimbote">
+    <meta name="author" content="Susi Maresca">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <Link rel="stylesheet" href="css/myStyle.css">
+    <style>
+        .body {
+            color: black;
+        }
+        .mosaico{
+            margin-top: 6vw;
+            margin-bottom: 5vw !important;
+        }
+        .external-links {
+            padding: 1rem;
+            border: 0.5px solid white;
+            border-radius: 4px;
+        }
+
+        .external-links ul {
+            list-style: none;
+        }
+
+        .external-links ul li a {
+            text-decoration: none;
+            color: rgb(245, 245, 245);
+            font-size: 1rem;
+            font-family: "Barlow", sans-serif;
+
+        }
+
+        .external-links ul li a:hover {
+            color: rgb(240, 240, 240);
+            font-weight: 450;
+        }
+
+        .external-links h4 {
+            font-family: "Barlow", sans-serif;
+            font-weight: 600;
+            color: rgb(212, 212, 212);
+            font-variant: small-caps;
+        }
+
+        .external-links h5 {
+            font-family: "Barlow", sans-serif;
+            font-weight: 400;
+            color: rgb(185, 185, 185);
+            font-variant: small-caps;
+        }
+
+        .external-links ul li i {
+            margin-right: 2rem;
+            font-size: 1.1rem;
+        }
+        .fade-in {
+            opacity: 0;
+            animation: fade-in 2s forwards;
+        }
+
+        @keyframes fade-in {
+            to {
+                opacity: 1;
+            }
+        }
+        /* Estilo para cambiar la orientación del menú solo para el capitulo 5 */
+        .dropdown-menu[data-orientation="left"] {
+            left: auto;
+            right: 100%;
+        }
+
+        @media (max-width: 768px) {
+
+            #libro {
+                padding-top: 10vw;
+            }
+
+            
+            .external-links{
+                margin: 2vw;
+                padding: 2vw;
+            }
+            .mosaico{
+                margin: 0;
+                padding: 2vw ;
+            }
+        }
+    </style>
+</head>
+
+<body class="body bg-black">
+
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-dark fixed-top bg-black">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light text-small-caps nombre" href="index.html">Susi Maresca</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-small-caps">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="proyectos.html">Proyectos</a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item dropdown dropdown-submenu">
+                                <a href="libro.html" class="dropdown-item">La ruta del litio, voces del agua</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="capitulo1.html" class="dropdown-item">Capitulo 1</a></li>
+                                    <li><a href="capitulo2.html" class="dropdown-item">Capitulo 2</a></li>
+                                    <li><a href="capitulo3.html" class="dropdown-item">Capitulo 3</a></li>
+                                    <li><a href="capitulo4.html" class="dropdown-item">Capitulo 4</a></li>
+                                    <li class="nav-item dropdown dropdown-submenu">
+                                        <a href="capitulo5.html" class="dropdown-item">Capitulo 5</a>
+                                        <ul class="dropdown-menu" data-orientation="left">
+                                            <li class="nav-item dropdown dropdown-submenu">
+                                                <a href="losPueblosDeLaSal.html" class="dropdown-item">Los Pueblos de la Sal</a>
+                                            </li>
+                                            <li>
+                                                <a href="3erMalon.html" class="dropdown-item">Tercer Malon de la Paz</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="capitulo6.html" class="dropdown-item">Capitulo 6</a></li>
+                                    <li><a href="capitulo7.html" class="dropdown-item">Capitulo 7</a></li>
+                                    <li><a href="capitulo8.html" class="dropdown-item">Capitulo 8</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="historias.html">Historias</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="aCielo.html" class="dropdown-item">A cielo abierto</a>
+                            </li>
+                            <li>
+                                <a href="recuper.html" class="dropdown-item">Tierra</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link"><b>Noticias</b></a>
+                        <ul class="dropdown-menu">
+                            <li >
+                                <a href="nac.html" class="dropdown-item"><b>Public. medios nacionales</b></a>
+                            </li>
+                            <li >
+                                <a href="inter.html" class="dropdown-item">Public. medios internacionales</a>
+                            </li>
+                            <li >
+                                <a href="conc.html" class="dropdown-item">Concursos y Publicaciones</a>
+                            </li>
+                            <li >
+                                <a href="diflrdl.html" class="dropdown-item">Difusión La Ruta del Litio</a>
+                            </li>
+                            <li >
+                                <a href="entrev.html" class="dropdown-item">Entrevistas</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="multi.html" class="nav-link">Multimedia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bio.html">Bio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.instagram.com/susi.maresca" class="nav-link" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="libro" class="mt-4">
+        <!-- <img class="fondimg fixed-top" src="images/lrdlvocesdelagua/Portada/0b.jpg"> -->
+        <div class="mosaico">
+            <div class="row external-links fade-in">
+                <h4>Publicaciones en Medios Nacionales</h4>
+                <div class="col-12">
+                    <ul>
+                        <li><a href="https://revistacrisis.com.ar/notas/el-agua-vale-mas-que-todo" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i>Revista Crisis - El agua vale mas que
+                                todo</a><br></li>
+
+                        <li><a href="https://www.revistacitrica.com.ar/las-600-caminatas-de-andalgala.html" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i>Revista Citrica -
+                                Las 600 caminatas de andalgala</a></li>
+                        <li><a href="https://revistacitrica.com/andalgala-lucha-territorio.html" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i>Revista Citrica - No vamos a
+                                dejar de luchar por este territorio</a></li>
+                        <li><a href="https://revistacitrica.com/andalgala-mineria-contra-las-mujeres.html" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i>Revista Citrica - La
+                                dictadura minera de Andalgalá contra las mujeres </a></li>
+                        <li><a href="https://revistacitrica.com/presos-politicos-de-andalgala.html" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i>Revista Cítrica - Los presos
+                                políticos de Andalgalá</a></li>
+                        <li><a
+                                href="https://revistacitrica.com/entrevista-aldo-flores-andalgala-asamblea-el-algarrobo.html" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i>Revista Cítrica - En Andalgalá te amenazan o te
+                                quieren comprar</a></li>
+                        <li><a href="https://www.revistacitrica.com/en-andalgala-vivimos-una-dictadura-minera.html" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i>Revista Cítrica - “En Andalgalá vivimos una
+                                dictadura minera”</a></li>
+                        <li><a
+                                href="https://www.anred.org/2021/04/05/las-ensenanzas-de-andalgala-el-agua-es-para-el-pueblo-y-no-tiene-precio/" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i>ANRED - Las enseñanzas de Andalgalá: el agua es
+                                para el pueblo y no tiene precio</a></li>
+                        <li><a
+                                href="https://www.anred.org/2021/02/17/andalgala-a-11-anos-de-la-brutal-represion-aqui-se-respira-lucha/" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i>ANRED
+                                - Andalgalá, a 11 años de la brutal represión, aquí se respira lucha</a></li>
+                        <li><a
+                                href="https://www.anred.org/2020/12/21/festivan-en-guernica-peleamos-por-nuestra-libertad/" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i>ANRED
+                                - Festival en Guernica: «Peleamos por nuestra libertad»</a></li>
+                        <li><a
+                                href="https://www.anred.org/2021/08/30/hurlingham-avanzan-las-maquinas-sobre-el-humedal-y-les-vecines-resisten/" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i>ANRED
+                                - Hurlingham: Avanzan las máquinas sobre el humedal y les vecines resisten</a></li>
+                        <li><a href="https://www.anred.org/2021/04/24/las-presas-politicas-de-andalgala/" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i>ANRED - Las presas
+                                políticas de Andalgalá</a></li>
+                        <li><a href="https://www.anred.org/2021/04/28/en-andalgala-vivimos-una-dictadura-minera/" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i>ANRED - “En
+                                Andalgalá vivimos una dictadura minera”</a></li>
+                        <li><a
+                                href="https://www.anred.org/2021/06/12/lo-peor-de-las-crisis-esta-en-el-aumento-de-la-pobreza/" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i>ANRED
+                                - Lo peor de las crisis está en el aumento de la pobreza</a></li>
+                        <li><a
+                                href="https://www.anred.org/2021/03/16/somos-agua-la-megamineria-pone-en-riesgo-el-agua-y-la-vida/" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i>ANRED
+                                - Somos agua: La megaminería pone en riesgo el agua y la vida</a></li>
+                        <li><a
+                                href="https://agenciatierraviva.com.ar/la-sal-de-la-tierra-antofagasta-de-la-sierra-y-el-saqueo-de-litio/" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i>Tierra
+                                Viva - La sal de la tierra, Antofagasta de la Sierra y el saqueo de litio</a></li>
+                        <li><a
+                                href="https://agenciatierraviva.com.ar/andalgala-una-ciudad-violentada-por-defender-el-agua/" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i>Tierra
+                                Viva - Andalgalá: una ciudad violentada por defender el agua</a></li>
+                        <li><a
+                                href="https://agenciatierraviva.com.ar/andalgala-la-autodeterminacion-y-600-caminatas-por-la-vida/" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i>Tierra
+                                Viva - Andalgalá, la autodeterminación y 600 caminatas por la vida</a></li>
+                        <li><a
+                                href="https://agenciatierraviva.com.ar/esta-violencia-que-vivimos-siempre-la-llamamos-la-dictadura-minera/" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i>Tierra
+                                Viva - “Esta violencia que vivimos siempre la llamamos la dictadura minera”</a></li>
+                        <li><a href="https://agenciatierraviva.com.ar/los-presos-politicos-de-andalgala/" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i>Tierra Viva - Los
+                                presos políticos de Andalgalá</a></li>
+                        <li><a
+                                href="https://agenciatierraviva.com.ar/en-defensa-del-agua-y-el-cerro-se-multiplican-los-rechazos-al-proyecto-minero-mara-en-catamarca/" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i>Tierra
+                                Viva - En defensa del agua y el cerro, se multiplican los rechazos al proyecto minero
+                                MARA en Catamarca</a></li>
+                        <li><a
+                                href="https://agenciatierraviva.com.ar/las-paredes-de-andalgala-dicen-no-a-la-megamineria/" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i>Tierra
+                                Viva - Las paredes de Andalgalá dicen no a la megaminería</a></li>
+                        <li><a
+                                href="https://www.tiempoar.com.ar/informacion-general/las-tejedoras-de-ancasti-del-coyoyo-a-la-lucha-por-el-agua/" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i>Tiempo
+                                Argentino - Las tejedoras de Ancasti, del coyoyo a la lucha por el agua</a></li>
+                        <li><a
+                                href="https://www.tiempoar.com.ar/informacion-general/la-ruta-del-litio-el-lado-oculto-del-oro-blanco/" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i>Tiempo
+                                Argentino - La ruta del litio: el lado oculto del «oro blanco»</a></li>
+                        <li><a href="https://lavaca.org/mu159/andalgala-no-se-vende/"><i
+                                    class="fas fa-external-link-alt"></i>La Vaca - Andalgalá no se vende</a></li>
+                        <li><a
+                                href="https://marcha.org.ar/antofagasta-de-la-sierra-entre-la-transicion-energetica-y-la-vida-en-un-territorio-minado/" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i>Marcha
+                                - Antofagasta de la Sierra: Entre la transición energética y la vida en un territorio
+                                minado</a></li>
+                        <li><a href="https://fatpren.org.ar/wp-content/uploads/2021/09/dci-270921.pdf" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i>CONTAMINACION INFORMATIVA
+                                - Medios, extractivismo y soberanía</a></li>
+                        <li><a
+                                href="https://eltresde.com/2019/09/16/emergencia-alimentaria-no-podemos-ser-indiferentes/" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i>El
+                                TRES DE - Emergencia alimentaria, no podemos ser indiferentes</a></li>
+                        <li><a
+                                href="https://lanotatucuman.com/liberaron-a-las-personas-detenidas-en-andalgala/actualidad/26/04/2021/59045/" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i>La
+                                Nota - Liberaron a las personas detenidas en Andalgalá</a></li>
+                        <li><a href="https://latinta.com.ar/2021/09/jovenes-andalgala-ninguna-autoridad/" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i>La Tinta - Jóvenes de
+                                Andalgalá: «Ninguna autoridad hace nada»</a></li>
+                        <li><a
+                                href="https://democraciaambientalactiva.revistacitrica.com.ar/testimonio-raul-barrionuevo-choya-andalgala-agua-oro-megamineria.html?fbclid=IwAR1O3J1Yw6JULdouJ3I2GDmn5ynWglDw2QjHq5E6r8uPgTX7uJSOL7oHVAs" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i>Democracia
+                                Ambiental Activa - “PELEAMOS POR EL ORO MÁS PRECIADO: EL AGUA”</a></li>
+                                <li><a
+                                    href="https://www.cels.org.ar/web/wp-content/uploads/2024/07/Bala-y-carcel.pdf" target="_blank"><i
+                                        class="fas fa-external-link-alt"></i>CELS - BALA Y CARCEL - Criminalización de manifestantes y restricción de libertades democráticas en Argentina</a></li>
+                    </ul>
+                </div>
+
+            </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-white text-center fixed-bottom bg-black">
+        <p>&copy; 2024 - Susi Maresca - Todos los derechos reservados.</p>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const imgs = document.querySelectorAll('.fade-in');
+            setTimeout(() => {
+                imgs.forEach(img => {
+                    img.classList.add('show');
+                });
+            }, 10);
+            function checkScreenWidth() {
+                const isMobile = window.innerWidth <= 768;
+                const overlays = document.querySelectorAll('.overlay');
+                overlays.forEach(overlay => {
+                    if (isMobile) {
+                        overlay.classList.remove('.overlay')
+                    } else {
+                        overlay.classList.add('.overlay');
+                    }
+                });
+            }
+            checkScreenWidth();
+            window.addEventListener('resize', checkScreenWidth);
+        });
+
+    </script>
+</body>
+
+</html>

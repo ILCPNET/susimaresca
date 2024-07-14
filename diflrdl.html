@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Susi Maresca</title>
+    <meta name="description" content="Susi Maresca, Fotografa documentalista, Fotoperiodista, Pedagoga Social.">
+    <meta name="keywords" content="Susi Maresca, Fotografa Independiente, Fotografia Profesional, Ruta del Litio, Voces del Agua, Argentina Arde, Red de Accion Fotografica, Historias, Noticias, Investigaciones, Chirimbote">
+    <meta name="author" content="Susi Maresca">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <Link rel="stylesheet" href="css/myStyle.css">
+    <style>
+        .body {
+            color: white;
+        }
+
+        .mosaico {
+            margin-bottom: 5vw;
+        }
+
+        .external-links {
+            padding: 1rem;
+            border: 0.5px solid white;
+            border-radius: 4px;
+        }
+
+        .external-links ul {
+            list-style: none;
+        }
+
+        .external-links ul li a {
+            text-decoration: none;
+            color: rgb(245, 245, 245);
+            font-size: 1rem;
+            font-family: "Barlow", sans-serif;
+
+        }
+
+        .external-links ul li a:hover {
+            color: rgb(240, 240, 240);
+            font-weight: 450;
+        }
+
+        .external-links h4 {
+            font-family: "Barlow", sans-serif;
+            font-weight: 600;
+            color: rgb(212, 212, 212);
+            font-variant: small-caps;
+        }
+
+        .external-links h5 {
+            font-family: "Barlow", sans-serif;
+            font-weight: 400;
+            color: rgb(185, 185, 185);
+            font-variant: small-caps;
+        }
+
+        .external-links ul li i {
+            margin-right: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .fade-in {
+            opacity: 0;
+            animation: fade-in 2s forwards;
+        }
+
+        @keyframes fade-in {
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Estilo para cambiar la orientación del menú solo para el capitulo 5 */
+        .dropdown-menu[data-orientation="left"] {
+            left: auto;
+            right: 100%;
+        }
+
+        @media (max-width: 768px) {
+
+            #libro {
+                padding-top: 10vw;
+            }
+
+
+            .external-links{
+                margin: 2vw;
+                padding: 2vw;
+            }
+            .mosaico{
+                margin: 0;
+                padding: 2vw ;
+            }
+        }
+    </style>
+</head>
+
+<body class="body bg-black">
+
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-dark fixed-top bg-black">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light text-small-caps nombre" href="index.html">Susi Maresca</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-small-caps">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="proyectos.html">Proyectos</a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item dropdown dropdown-submenu">
+                                <a href="libro.html" class="dropdown-item">La ruta del litio, voces del agua</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="capitulo1.html" class="dropdown-item">Capitulo 1</a></li>
+                                    <li><a href="capitulo2.html" class="dropdown-item">Capitulo 2</a></li>
+                                    <li><a href="capitulo3.html" class="dropdown-item">Capitulo 3</a></li>
+                                    <li><a href="capitulo4.html" class="dropdown-item">Capitulo 4</a></li>
+                                    <li class="nav-item dropdown dropdown-submenu">
+                                        <a href="capitulo5.html" class="dropdown-item">Capitulo 5</a>
+                                        <ul class="dropdown-menu" data-orientation="left">
+                                            <li class="nav-item dropdown dropdown-submenu">
+                                                <a href="losPueblosDeLaSal.html" class="dropdown-item">Los Pueblos de la
+                                                    Sal</a>
+                                            </li>
+                                            <li>
+                                                <a href="3erMalon.html" class="dropdown-item">Tercer Malon de la Paz</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="capitulo6.html" class="dropdown-item">Capitulo 6</a></li>
+                                    <li><a href="capitulo7.html" class="dropdown-item">Capitulo 7</a></li>
+                                    <li><a href="capitulo8.html" class="dropdown-item">Capitulo 8</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="">Historias</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="aCielo.html" class="dropdown-item">A cielo abierto</a>
+                            </li>
+                            <li>
+                                <a href="recuper.html" class="dropdown-item">Tierra</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link"><b>Noticias</b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="nac.html" class="dropdown-item">Public. medios nacionales</a>
+                            </li>
+                            <li>
+                                <a href="inter.html" class="dropdown-item">Public. medios internacionales</a>
+                            </li>
+                            <li>
+                                <a href="conc.html" class="dropdown-item">Concursos y Publicaciones</a>
+                            </li>
+                            <li>
+                                <a href="diflrdl.html" class="dropdown-item"><b>Difusión La Ruta del Litio</b></a>
+                            </li>
+                            <li>
+                                <a href="entrev.html" class="dropdown-item">Entrevistas</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="multi.html" class="nav-link">Multimedia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bio.html">Bio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.instagram.com/susi.maresca" class="nav-link" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="libro" class="mt-4">
+        <!-- <img class="fondimg fixed-top" src="images/lrdlvocesdelagua/Portada/0b.jpg"> -->
+        <div class="mosaico">
+            <div class="row m-4 external-links fade-in">
+                <H4>Difusion del proyecto La Ruta del Litio en medios de comunicacion</H4>
+                <div class="col-12">
+                    <ul>
+                        <h5>Antofagasta</h5>
+                        <li><a href="https://www.tiempoar.com.ar/informacion-general/la-ruta-del-litio-el-lado-oculto-del-oro-blanco/"
+                                target="_blank"><i class="fas fa-external-link-alt"></i>Tiempo
+                                Argentino - La ruta del litio: el lado oculto del «oro blanco»</a></li>
+                        <li><a href="https://revistacitrica.com/ruta-del-litio-oro-blanco-extractivismo-saqueo.html"
+                                target="_blank"><i class="fas fa-external-link-alt"></i>Citrica -
+                                No todo lo que brilla es litio</a></li>
+                        <li><a href="https://latfem.org/la-ruta-del-litio-el-lado-oculto-del-oro-blanco/"
+                                target="_blank"><i class="fas fa-external-link-alt"></i>LATFEM - La ruta del
+                                litio: el lado oculto del “oro blanco”</a></li>
+                        <li><a href="https://marcha.org.ar/la-ruta-del-litio-el-lado-oculto-del-oro-blanco/"
+                                target="_blank"><i class="fas fa-external-link-alt"></i>Marcha - La ruta
+                                del litio: el lado oculto del «oro blanco»</a></li>
+                        <h5>Fiambalá</h5>
+                        <li><a href="https://agenciatierraviva.com.ar/voces-rostros-y-comunidades-que-dicen-no-a-la-mineria-de-litio/"
+                                target="_blank"><i class="fas fa-external-link-alt"></i>Tierra
+                                Viva - Voces, rostros y comunidades que dicen "no" a la minería de litio</a></li>
+                        <li><a href="https://agenciatierraviva.com.ar/la-mineria-de-litio-desde-cerca-vulneracion-de-derechos-y-saqueo-en-fiambala/"
+                                target="_blank"><i class="fas fa-external-link-alt"></i>Tierra
+                                Viva - La minería de litio desde cerca: vulneración de derechos y saqueo en Fiambalá</a>
+                        </li>
+                        <li><a href="https://www.publico.es/ciencias/sale-agua-cubrir-demanda-litio.html"
+                                target="_blank"><i class="fas fa-external-link-alt"></i>Publico - ¿De dónde
+                                sale el agua para cubrir la demanda de litio?</a></li>
+                        <li><a href="https://www.servindi.org/actualidad-cronica/07/05/2023/la-mineria-de-litio-desde-cerca-vulneracion-de-derechos-y-saqueo"
+                                target="_blank"><i class="fas fa-external-link-alt"></i>Servindi
+                                - La minería de litio desde cerca: vulneración de derechos y saqueo</a></li>
+                        <li><a href="https://agua.org.mx/mundo-de-donde-sale-el-agua-para-cubrir-la-demanda-de-litio-publico/"
+                                target="_blank"><i class="fas fa-external-link-alt"></i>AGUA
+                                - Mundo – ¿De dónde sale el agua para cubrir la demanda de litio? (Público)</a></li>
+                        <li><a href="https://ihu.unisinos.br/categorias/629124-de-onde-sai-a-agua-para-atender-a-demanda-por-litio"
+                                target="_blank"><i class="fas fa-external-link-alt"></i>Instituto
+                                Humanitas Unisinos - De onde sai a água para atender a demanda por lítio?</a></li>
+                        <li><a href="https://comitatocarlosfonseca.noblogs.org/post/2023/05/27/argentina-lattivita-mineraria-del-litio-da-vicino-lesione-di-diritti-e-saccheggio-a-fiambala/"
+                                target="_blank"><i class="fas fa-external-link-alt"></i>Comitato
+                                Carlos Fonseca - Argentina: L’attività mineraria del litio da vicino, lesione di diritti
+                                e
+                                saccheggio a Fiambalà</a></li>
+                        <li><a href="https://www.elextremosur.com/nota/43309-litio-vulneracion-de-derechos-y-saqueo-en-fiambala/"
+                                target="_blank"><i class="fas fa-external-link-alt"></i>El
+                                extremo sur de la Patagonia - Litio, vulneración de derechos y saqueo en Fiambalá</a>
+                        </li>
+                        <h5>Jujuy</h5>
+                        <li><a href="https://latfem.org/los-pueblos-de-la-sal/" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i>LATFEM - Los pueblos de la sal</a></li>
+                        <li><a href="https://latfem.org/jujenazo-estamos-en-las-calles-por-los-pueblos-originarios-y-por-toda-la-sociedad/"
+                                target="_blank"><i class="fas fa-external-link-alt"></i>LATFEM
+                                - Jujeñazo: “Estamos en las calles por los pueblos originarios y por toda la
+                                sociedad”</a></li>
+                        <li><a href="https://agenciatierraviva.com.ar/las-voces-indigenas-en-jujuy-exigen-arriba-las-wiphalas-abajo-la-reforma-constitucional/"
+                                target="_blank"><i class="fas fa-external-link-alt"></i>Tierra
+                                Viva - Las voces indígenas en Jujuy exigen "arriba las wiphalas, abajo la reforma
+                                constitucional"</a></li>
+                        <li><a href="https://agenciatierraviva.com.ar/movilizacion-indigena-contra-la-cuestionada-reforma-constitucional-en-jujuy/"
+                                target="_blank"><i class="fas fa-external-link-alt"></i>Tierra
+                                Viva - Movilización indígena contra la cuestionada reforma constitucional en Jujuy</a>
+                        </li>
+                        <li><a href="https://marcha.org.ar/jujenazo-de-nineces-presentes-y-futuros-ancestrales/"
+                                target="_blank"><i class="fas fa-external-link-alt"></i>Marcha -
+                                Jujeñazo: De niñeces presentes y futuros ancestrales</a></li>
+                        <li><a href="https://www.laizquierdadiario.cl/Asi-se-lucho-en-Purmamarca-Morales-reprime-Jujuy-resiste"
+                                target="_blank"><i class="fas fa-external-link-alt"></i>La
+                                Izquierda Diario - Abajo la reforma. [Fotogalería] Así se luchó en Purmamarca: Morales
+                                reprime,
+                                Jujuy resiste</a></li>
+                        <li><a href="https://www.iade.org.ar/noticias/movilizacion-indigena-contra-la-cuestionada-reforma-constitucional-en-jujuy"
+                                target="_blank"><i class="fas fa-external-link-alt"></i>Instituto
+                                Argentino para el desarrollo económico - Movilización indígena contra la cuestionada
+                                reforma
+                                constitucional en Jujuy</a></li>
+                        <li><a href="https://latinta.com.ar/2023/06/12/movilizacion-indigena-reforma-constitucional-jujuy/"
+                                target="_blank"><i class="fas fa-external-link-alt"></i>La
+                                Tinta - Movilización indígena contra la cuestionada reforma constitucional en Jujuy</a>
+                        </li>
+                        <li><a href="https://diariolateral.com.ar/multitudinaria-marcha-en-jujuy-por-la-educacion-la-salud-y-en-contra-de-la-reforma-constitucional-de-morales/"
+                                target="_blank"><i class="fas fa-external-link-alt"></i>Diario
+                                Lateral - Multitudinaria marcha en Jujuy por la educación, la salud y en contra de la
+                                reforma
+                                constitucional de Morales</a></li>
+                        <li><a href="https://www.dinamopress.it/news/argentina-i-popoli-indigeni-della-provincia-di-jujuy-contro-la-riforma-costituzionale/"
+                                target="_blank"><i class="fas fa-external-link-alt"></i>Dinamo
+                                Press - Argentina, i popoli indigeni della provincia di Jujuy contro la riforma
+                                costituzionale</a></li>
+                        <li><a href="https://marcha.org.ar/jujenazo-estamos-en-las-calles-por-los-pueblos-originarios-y-por-toda-la-sociedad/"
+                                target="_blank"><i class="fas fa-external-link-alt"></i>Marcha
+                                - Jujeñazo: “Estamos en las calles por los pueblos originarios y por toda la
+                                sociedad”</a></li>
+                        <li><a href="https://www.elextremosur.com/nota/43936-arriba-las-wiphalas-abajo-la-reforma-constitucional/"
+                                target="_blank"><i class="fas fa-external-link-alt"></i>El
+                                extremo sur de la Patagonía - "Arriba las wiphalas, abajo la reforma constitucional"</a>
+                        </li>
+                        <li><a href="https://wayka.pe/la-batalla-por-el-agua-la-tierra-y-el-litio-mas-de-400-comunidades-de-jujuy-en-alerta/"
+                                target="_blank"><i class="fas fa-external-link-alt"></i>WAYKA
+                                - La batalla por el agua, la tierra y el litio: Más de 400 comunidades de Jujuy en
+                                alerta</a></li>
+                        <li><a href="https://wambra.ec/jujenazo-argentina-protesta-pueblos-originarios-constitucion/"
+                                target="_blank"><i class="fas fa-external-link-alt"></i>WAMBRA -
+                                Jujeñazo: “Estamos en las calles por los pueblos originarios y por toda la sociedad”</a>
+                        </li>
+                        <li><a href="https://3eravoz.com/internacionales/argentina-movilizacion-indigena-contra-la-cuestionada-reforma-constitucional-en-jujuy/"
+                                target="_blank"><i class="fas fa-external-link-alt"></i>La
+                                Tercera Voz - Movilizacion indigena contra la cuestionada reforma constitucional en
+                                jujuy</a></li>
+                        <li><a href="https://www.tiempoar.com.ar/informacion-general/multitudinaria-marcha-jujuy-morales/"
+                                target="_blank"><i class="fas fa-external-link-alt"></i>Tiempo
+                                Argentino - Multitudinaria marcha en Jujuy por la educación, la salud y en contra de la
+                                reforma
+                                constitucional de Morales</a></li>
+                        <li><a href="https://anfespanol.com/noticias/las-voces-indigenas-en-jujuy-exigen-arriba-las-wiphalas-abajo-la-reforma-constitucional-42947"
+                                target="_blank"><i class="fas fa-external-link-alt"></i>ANFNEWS
+                                - Las voces indígenas en Jujuy exigen "arriba las wiphalas, abajo la reforma
+                                constitucional"</a></li>
+                        <h5>Tucumán</h5>
+                        <li><a href="https://marcha.org.ar/marcos-pastrana-es-la-hora-de-los-pueblos/"
+                                target="_blank"><i class="fas fa-external-link-alt"></i>Marcha - Marcos Pastrana:
+                                “Es la hora de los pueblos”</a></li>
+                        <li><a href="https://revistacitrica.com/marcos-pastrana-ancianos-pueblo-diaguita.html"
+                                target="_blank"><i class="fas fa-external-link-alt"></i>Citrica - "Es la
+                                hora de los pueblos"</a></li>
+                        <li><a href="https://periodismoambiental.com.ar/es-la-hora-de-los-pueblos/" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i>Sala de Prensa Ambiental -
+                                Marcos Pastrana: «Es la hora de los pueblos»</a></li>
+                        <li><a href="https://www.pagina12.com.ar/581450-diaguitas-que-se-organizan-en-red-para-mirar-al-futuro-desde"
+                                target="_blank"><i class="fas fa-external-link-alt"></i>Pagina
+                                12 - Diaguitas que se organizan en red para mirar al futuro desde raíces bien
+                                plantadas</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-white text-center fixed-bottom bg-black">
+        <p>&copy; 2024 - Susi Maresca - Todos los derechos reservados.</p>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const imgs = document.querySelectorAll('.fade-in');
+            setTimeout(() => {
+                imgs.forEach(img => {
+                    img.classList.add('show');
+                });
+            }, 10);
+            function checkScreenWidth() {
+                const isMobile = window.innerWidth <= 768;
+                const overlays = document.querySelectorAll('.overlay');
+                overlays.forEach(overlay => {
+                    if (isMobile) {
+                        overlay.classList.remove('.overlay')
+                    } else {
+                        overlay.classList.add('.overlay');
+                    }
+                });
+            }
+            checkScreenWidth();
+            window.addEventListener('resize', checkScreenWidth);
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Susi Maresca</title>
+    <meta name="description" content="Susi Maresca, Fotografa documentalista, Fotoperiodista, Pedagoga Social.">
+    <meta name="keywords" content="Susi Maresca, Fotografa Independiente, Fotografia Profesional, Ruta del Litio, Voces del Agua, Argentina Arde, Red de Accion Fotografica, Historias, Noticias, Investigaciones, Chirimbote">
+    <meta name="author" content="Susi Maresca">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/myStyle.css">
+    <style>
+        .carousel-container {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .carousel {
+            margin-top: 5vw;
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+            width: 100%;
+            height: 90vh;
+            gap: 10px;
+            overflow: hidden;
+        }
+
+        .carousel img {
+            flex: 0 0 auto;
+            height: auto;
+            max-width: 100%;
+            object-fit: cover;
+            border-radius: 1px !important;
+            transition: transform 0.3s ease;
+        }
+
+        .carousel-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 1;
+        }
+
+        .carousel-button.prev {
+            left: 10px;
+        }
+
+        .carousel-button.next {
+            right: 10px;
+        }
+
+        /* Ef fade - in*/
+        .fade-in {
+            opacity: 0;
+            animation: fade-in 2s forwards;
+        }
+
+        @keyframes fade-in {
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* ---- */
+        /* Estilo para cambiar la orientación del menú solo para el capitulo 5 */
+        .dropdown-menu[data-orientation="left"] {
+            left: auto;
+            right: 100%;
+        }
+        @media (max-width: 576px) {
+            .carousel img {
+                height: auto;
+                max-height: 60vh;
+            }
+        }
+        /* Por favor, gire su dispositivo*/
+     .rotate-message {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 20px;
+            border-radius: 1px !important;
+            text-align: center;
+            z-index: 9999;
+        }
+
+        @media (orientation: portrait) {
+            #rotateMessage {
+                display: block;
+            }
+            .texto{
+                position: relative;
+                
+            }
+            .footer {
+                margin-top: 15vw;
+            }
+            
+            .carousel-container {
+                overflow: hidden;
+                margin-top: 5vw;
+                padding-bottom: 5vw;
+                position: relative;
+                height: 100%;
+            }
+            
+            .carousel {
+                display: block;
+                height: 100%;
+            }
+
+            .carousel img {
+                display: block;
+                width: 100%;
+                max-width: none;
+                margin-bottom: 2px;
+            }
+
+            .carousel-button {
+                display: none;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .carousel img {
+                height: auto;
+                max-height: 60vh;
+            }
+        }
+
+        @media (orientation: landscape) and (max-height: 500px) {
+            #recuper {
+                padding-top: 5vw;
+
+            }
+            .carousel {
+                height: 80vh;
+                width: 100%;
+            }
+
+            .carousel img {
+                height: auto;
+                /* max-height: 40vh; */
+            }
+        }
+    </style>
+</head>
+
+<body class="body bg-black">
+    <div id="rotateMessage" class="rotate-message">Por favor, gire su dispositivo para una mejor experiencia visual.</div>
+    <!-- Home Section -->
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-dark fixed-top bg-black">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light text-small-caps nombre" href="index.html">Susi Maresca</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-small-caps">
+                    <li class="nav-item">
+                        <p class="nav-link"><b>Salta</b>&emsp;|</p>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="proyectos.html"><b>Proyectos</b></a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item dropdown dropdown-submenu">
+                                <a href="libro.html" class="dropdown-item"><b>La ruta del litio, voces del agua</b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="capitulo1.html" class="dropdown-item">Capitulo 1</a></li>
+                                    <li><a href="capitulo2.html" class="dropdown-item">Capitulo 2</a></li>
+                                    <li><a href="capitulo3.html" class="dropdown-item">Capitulo 3</a></li>
+                                    <li><a href="capitulo4.html" class="dropdown-item">Capitulo 4</a></li>
+                                    <li class="nav-item dropdown dropdown-submenu">
+                                        <a href="capitulo5.html" class="dropdown-item">Capitulo 5</a>
+                                        <ul class="dropdown-menu" data-orientation="left">
+                                            <li class="nav-item dropdown dropdown-submenu">
+                                                <a href="losPueblosDeLaSal.html" class="dropdown-item">Los Pueblos de la Sal</a>
+                                            </li>
+                                            <li>
+                                                <a href="3erMalon.html" class="dropdown-item">Tercer Malon de la Paz</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="capitulo6.html" class="dropdown-item bg-dark border"><b>Capitulo 6</b></a></li>
+                                    <li><a href="capitulo7.html" class="dropdown-item">Capitulo 7</a></li>
+                                    <li><a href="capitulo8.html" class="dropdown-item">Capitulo 8</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="historias.html">Historias</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="aCielo.html" class="dropdown-item">A cielo abierto</a>
+                            </li>
+                            <li>
+                                <a href="recuper.html" class="dropdown-item">Tierra</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link">Noticias</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="nac.html" class="dropdown-item">Public. medios nacionales</a>
+                            </li>
+                            <li>
+                                <a href="inter.html" class="dropdown-item">Public. medios internacionales</a>
+                            </li>
+                            <li>
+                                <a href="conc.html" class="dropdown-item">Concursos y Publicaciones</a>
+                            </li>
+                            <li>
+                                <a href="diflrdl.html" class="dropdown-item">Difusión La Ruta del Litio</a>
+                            </li>
+                            <li>
+                                <a href="entrev.html" class="dropdown-item">Entrevistas</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="multi.html" class="nav-link">Multimedia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bio.html">Bio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.instagram.com/susi.maresca" class="nav-link" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="carousel-container fade-in">
+        <button class="carousel-button prev">&lt;</button>
+        <div class="carousel">
+            <img src="images/lrdlvocesdelagua/Capitulo6/1-P.jpg" alt="Image 1">
+            <img src="images/lrdlvocesdelagua/Capitulo6/2.jpg" alt="Image 2">
+            <img src="images/lrdlvocesdelagua/Capitulo6/3.jpg" alt="Image 3">
+            <img src="images/lrdlvocesdelagua/Capitulo6/4.jpg" alt="Image 4">
+            <img src="images/lrdlvocesdelagua/Capitulo6/5.jpg" alt="Image 5">
+            <img src="images/lrdlvocesdelagua/Capitulo6/6.jpg" alt="Image 6">
+            <img src="images/lrdlvocesdelagua/Capitulo6/7.jpg" alt="Image 7">
+            <img src="images/lrdlvocesdelagua/Capitulo6/8.jpg" alt="Image 8">
+        </div>
+        <button class="carousel-button next">&gt;</button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer text-white text-center">
+        <p>&copy; 2024 - Susi Maresca - Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const rotateMessage = document.getElementById('rotateMessage');
+
+            if (window.matchMedia("(orientation: portrait)").matches) {
+                rotateMessage.style.display = 'block';
+                setTimeout(() => {
+                    rotateMessage.style.opacity = 0;
+                    setTimeout(() => {
+                        rotateMessage.style.display = 'none';
+                    }, 500); // Tiempo de transición para el desvanecimiento
+                }, 4000); // El mensaje desaparecerá después de 5 segundos
+            }
+
+            window.matchMedia("(orientation: portrait)").addEventListener("change", function(e) {
+                if (e.matches) {
+                    rotateMessage.style.display = 'block';
+                    rotateMessage.style.opacity = 1;
+                    setTimeout(() => {
+                        rotateMessage.style.opacity = 0;
+                        setTimeout(() => {
+                            rotateMessage.style.display = 'none';
+                        }, 500); // Tiempo de transición para el desvanecimiento
+                    }, 4000); // El mensaje desaparecerá después de 5 segundos
+                }
+            });
+        });   
+        
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const carousel = document.querySelector('.carousel');
+            const prevButton = document.querySelector('.carousel-button.prev');
+            const nextButton = document.querySelector('.carousel-button.next');
+            const images = document.querySelectorAll('.carousel img');
+            let currentIndex = 0;
+
+            function updateCarousel() {
+                const image = images[currentIndex];
+                carousel.scrollTo({
+                    left: image.offsetLeft - (carousel.offsetWidth - image.offsetWidth) / 2,
+                    behavior: 'smooth'
+                });
+            }
+
+            prevButton.addEventListener('click', () => {
+                currentIndex = (currentIndex - 1 + images.length) % images.length;
+                updateCarousel();
+            });
+
+            nextButton.addEventListener('click', () => {
+                currentIndex = (currentIndex + 1) % images.length;
+                updateCarousel();
+            });
+            carousel.addEventListener('wheel', (event) => {
+                event.preventDefault();
+                if (event.deltaY > 0) {
+                    currentIndex = (currentIndex + 1) % images.length;
+                } else {
+                    currentIndex = (currentIndex - 1 + images.length) % images.length;
+                }
+                updateCarousel();
+            });
+
+            updateCarousel();
+        });
+    </script>
+</body>
+
+</html>
